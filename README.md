@@ -1,2 +1,2 @@
-# quiz_app
+# Quiz App
 Simple Quiz App made using Flutter
