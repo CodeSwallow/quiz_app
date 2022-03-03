@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_app/pages/choose_quiz_page.dart';
+import 'package:quiz_app/pages/quiz_page.dart';
 import 'package:quiz_app/widgets/menu_button.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
+  static const routeName = '/';
 
   @override
   Widget build(BuildContext context) {
@@ -17,10 +20,10 @@ class HomePage extends StatelessWidget {
           children: [
             Container(
               margin: const EdgeInsets.only(top: 30, bottom: 50),
-              child: const Icon(
+              child: Icon(
                 Icons.wb_sunny_outlined,
                 size: 100,
-                color: Colors.yellow,
+                color: Colors.purple.shade100,
               ),
             ),
             Card(
@@ -59,8 +62,14 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const MenuButton(btnText: 'Start Quiz'),
-                  const MenuButton(btnText: 'Choose Topic'),
+                  const MenuButton(
+                    btnText: 'Start Quiz',
+                    routeName: QuizPage.routeName,
+                  ),
+                  const MenuButton(
+                    btnText: 'Choose Topic',
+                    routeName: ChooseQuizPage.routeName,
+                  ),
                 ],
               ),
             ),

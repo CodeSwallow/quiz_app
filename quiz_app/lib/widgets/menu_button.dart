@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 
 class MenuButton extends StatelessWidget {
-  const MenuButton({Key? key, required this.btnText}) : super(key: key);
+  const MenuButton({Key? key, required this.btnText, required this.routeName})
+      : super(key: key);
   final String btnText;
+  final String routeName;
 
   @override
   Widget build(BuildContext context) {
     return OutlinedButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.pushNamed(context, routeName);
+      },
       child: Text(btnText),
       style: OutlinedButton.styleFrom(
         primary: Colors.black,
