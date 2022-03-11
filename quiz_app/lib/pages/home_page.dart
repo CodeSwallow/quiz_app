@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/pages/choose_quiz_page.dart';
+import 'package:quiz_app/pages/review_page.dart';
 import 'package:quiz_app/pages/quiz_page.dart';
 import 'package:quiz_app/widgets/menu_button.dart';
 
@@ -68,7 +68,7 @@ class HomePage extends StatelessWidget {
                   ),
                   const MenuButton(
                     btnText: 'Review Questions',
-                    routeName: ChooseQuizPage.routeName,
+                    routeName: ReviewPage.routeName,
                   ),
                 ],
               ),

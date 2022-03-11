@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/pages/choose_quiz_page.dart';
+import 'package:quiz_app/pages/review_page.dart';
 import 'package:quiz_app/pages/home_page.dart';
 import 'package:quiz_app/pages/quiz_page.dart';
 
@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
         routes: {
           HomePage.routeName: (ctx) => const HomePage(),
           QuizPage.routeName: (ctx) => const QuizPage(),
-          ChooseQuizPage.routeName: (ctx) => const ChooseQuizPage(),
+          ReviewPage.routeName: (ctx) => const ReviewPage(),
         });
   }
 }
