@@ -9,6 +9,9 @@ class QuizCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final int rightIndex =
+        question.options.indexWhere((element) => element == question.answer);
+
     return Card(
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -40,10 +43,10 @@ class QuizCard extends StatelessWidget {
                       style: Theme.of(context).textTheme.bodyText1),
                   onTap: () {
                     bool correct = false;
-                    if (question.options[index] == question.answer) {
+                    if (rightIndex == index) {
                       correct = true;
                     }
-                    callback(correct);
+                    callback(correct, question.options[index]);
                   },
                 ),
               ),

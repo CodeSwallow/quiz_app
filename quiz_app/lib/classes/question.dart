@@ -2,6 +2,8 @@ class Question {
   String question;
   String answer;
   List<dynamic> options;
+  String selected = 'Skipped';
+  bool correct = false;
 
   Question(
       {required this.question, required this.answer, required this.options});

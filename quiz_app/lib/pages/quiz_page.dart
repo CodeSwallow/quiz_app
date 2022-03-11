@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:quiz_app/classes/question.dart';
 import 'package:quiz_app/classes/quiz.dart';
-import 'package:quiz_app/pages/home_page.dart';
+import 'package:quiz_app/pages/results_page.dart';
 import 'package:quiz_app/widgets/progress_bar.dart';
 import 'package:quiz_app/widgets/quiz_card.dart';
 
@@ -29,6 +29,9 @@ class _QuizPageState extends State<QuizPage> {
     data.shuffle();
     for (var item in data.sublist(0, totalQuestions)) {
       quiz.questions.add(Question.fromJson(item));
+    }
+    for (var question in quiz.questions) {
+      question.options.shuffle();
     }
     setState(() {});
   }
@@ -68,7 +71,7 @@ class _QuizPageState extends State<QuizPage> {
           ),
           TextButton(
               onPressed: () {
-                _optionSelected(false);
+                _optionSelected(false, 'Skipped');
               },
               child: const Text('Skip', style: TextStyle(color: Colors.white)))
         ],
@@ -76,7 +79,11 @@ class _QuizPageState extends State<QuizPage> {
     );
   }
 
-  void _optionSelected(bool correct) {
+  void _optionSelected(bool correct, String selected) async {
+    quiz.questions[progressIndex].selected = selected;
+    quiz.questions[progressIndex].correct = correct;
+
+    progressIndex += 1;
     if (correct) {
       quiz.right += 1;
     }
@@ -89,30 +96,40 @@ class _QuizPageState extends State<QuizPage> {
         builder: (BuildContext context) => _buildResultDialog(context),
       );
     }
-    progressIndex += 1;
     setState(() {});
   }
 
   Widget _buildResultDialog(BuildContext context) {
     return AlertDialog(
-      title: const Text('Results'),
+      title:
+          Text('Overall Results', style: Theme.of(context).textTheme.headline1),
+      backgroundColor: Theme.of(context).primaryColorDark,
       content: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Total Questions: $totalQuestions"),
-          Text("Correct: ${quiz.right}"),
-          Text("Incorrect: ${totalQuestions - quiz.right}"),
-          Text("Percent: ${quiz.percent}%"),
+          Text("Total Questions: $totalQuestions",
+              style: Theme.of(context).textTheme.bodyText1),
+          Text("Correct: ${quiz.right}",
+              style: Theme.of(context).textTheme.bodyText1),
+          Text("Incorrect: ${totalQuestions - quiz.right}",
+              style: Theme.of(context).textTheme.bodyText1),
+          Text("Percent: ${quiz.percent}%",
+              style: Theme.of(context).textTheme.bodyText1),
         ],
       ),
-      actions: <Widget>[
+      actions: [
         TextButton(
           onPressed: () {
             Navigator.of(context).pop();
-            Navigator.pushReplacementNamed(context, HomePage.routeName);
+            Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ResultsPage(quiz: quiz),
+                ));
           },
-          child: const Text('Close'),
+          child: Text('See questions',
+              style: Theme.of(context).textTheme.bodyText1),
         ),
       ],
     );
