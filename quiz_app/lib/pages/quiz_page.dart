@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:quiz_app/classes/question.dart';
 import 'package:quiz_app/classes/quiz.dart';
+import 'package:quiz_app/pages/home_page.dart';
 import 'package:quiz_app/widgets/progress_bar.dart';
 import 'package:quiz_app/widgets/quiz_card.dart';
 
@@ -16,7 +17,8 @@ class QuizPage extends StatefulWidget {
 }
 
 class _QuizPageState extends State<QuizPage> {
-  double progressIndex = 0;
+  late int totalQuestions;
+  int progressIndex = 0;
   int questionIndex = 0;
   late Quiz quiz = Quiz(name: 'Us States', questions: []);
 
@@ -24,16 +26,17 @@ class _QuizPageState extends State<QuizPage> {
     final String response =
         await rootBundle.loadString('assets/json/questions.json');
     final List<dynamic> data = await json.decode(response);
-    for (var item in data) {
+    data.shuffle();
+    for (var item in data.sublist(0, totalQuestions)) {
       quiz.questions.add(Question.fromJson(item));
     }
-    quiz.questions.shuffle();
     setState(() {});
   }
 
   @override
   void initState() {
     super.initState();
+    totalQuestions = widget.numberQuestions;
     readJson();
   }
 
@@ -50,7 +53,7 @@ class _QuizPageState extends State<QuizPage> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Text('Timer', style: Theme.of(context).textTheme.headline1),
-          ProgressBar(index: progressIndex),
+          ProgressBar(index: progressIndex, total: totalQuestions),
           ConstrainedBox(
             constraints: const BoxConstraints(maxHeight: 450),
             child: Container(
@@ -65,9 +68,7 @@ class _QuizPageState extends State<QuizPage> {
           ),
           TextButton(
               onPressed: () {
-                setState(() {
-                  progressIndex += .1;
-                });
+                _optionSelected(false);
               },
               child: const Text('Skip', style: TextStyle(color: Colors.white)))
         ],
@@ -77,9 +78,43 @@ class _QuizPageState extends State<QuizPage> {
 
   void _optionSelected(bool correct) {
     if (correct) {
-      print('Correct');
-    } else {
-      print('Not correct');
+      quiz.right += 1;
     }
+    if (questionIndex < totalQuestions - 1) {
+      questionIndex += 1;
+    } else {
+      showDialog(
+        barrierDismissible: false,
+        context: context,
+        builder: (BuildContext context) => _buildResultDialog(context),
+      );
+    }
+    progressIndex += 1;
+    setState(() {});
+  }
+
+  Widget _buildResultDialog(BuildContext context) {
+    return AlertDialog(
+      title: const Text('Results'),
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text("Total Questions: $totalQuestions"),
+          Text("Correct: ${quiz.right}"),
+          Text("Incorrect: ${totalQuestions - quiz.right}"),
+          Text("Percent: ${quiz.percent}%"),
+        ],
+      ),
+      actions: <Widget>[
+        TextButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+            Navigator.pushReplacementNamed(context, HomePage.routeName);
+          },
+          child: const Text('Close'),
+        ),
+      ],
+    );
   }
 }
