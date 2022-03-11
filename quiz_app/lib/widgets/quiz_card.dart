@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_app/classes/question.dart';
 
 class QuizCard extends StatelessWidget {
-  const QuizCard({Key? key}) : super(key: key);
+  const QuizCard({Key? key, required this.question, required this.callback})
+      : super(key: key);
+  final Question question;
+  final Function callback;
 
   @override
   Widget build(BuildContext context) {
@@ -11,13 +15,13 @@ class QuizCard extends StatelessWidget {
         children: [
           Container(
             margin: const EdgeInsets.all(15),
-            child:
-                Text('Question', style: Theme.of(context).textTheme.headline2),
+            child: Text(question.question,
+                style: Theme.of(context).textTheme.headline2),
           ),
           Flexible(
             child: ListView.builder(
               shrinkWrap: true,
-              itemCount: 4,
+              itemCount: question.options.length,
               itemBuilder: (_, index) => Container(
                 margin: const EdgeInsets.all(3),
                 decoration: BoxDecoration(
@@ -32,9 +36,15 @@ class QuizCard extends StatelessWidget {
                     '${index + 1}',
                     style: Theme.of(context).textTheme.bodyText1,
                   ),
-                  title: Text('Options',
+                  title: Text(question.options[index],
                       style: Theme.of(context).textTheme.bodyText1),
-                  onTap: () {},
+                  onTap: () {
+                    bool correct = false;
+                    if (question.options[index] == question.answer) {
+                      correct = true;
+                    }
+                    callback(correct);
+                  },
                 ),
               ),
             ),
