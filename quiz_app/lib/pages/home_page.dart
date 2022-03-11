@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
                     routeName: QuizPage.routeName,
                   ),
                   const MenuButton(
-                    btnText: 'Choose Topic',
+                    btnText: 'Review Questions',
                     routeName: ChooseQuizPage.routeName,
                   ),
                 ],

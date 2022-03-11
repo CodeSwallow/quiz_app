@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class ChooseQuizPage extends StatelessWidget {
   const ChooseQuizPage({Key? key}) : super(key: key);
-  static const routeName = '/choose_quiz_page';
+  static const routeName = '/review_page';
 
   @override
   Widget build(BuildContext context) {
