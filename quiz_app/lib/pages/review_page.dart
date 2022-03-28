@@ -17,10 +17,13 @@ class _ReviewPageState extends State<ReviewPage> {
 
   Future<void> readJson() async {
     final String response =
-        await rootBundle.loadString('assets/json/questions.json');
+        await rootBundle.loadString('assets/json/americaCountries.json');
     final List<dynamic> data = await json.decode(response);
     for (var item in data) {
-      quiz.questions.add(Question.fromJson(item));
+      print(item);
+      Question question = Question.fromJson(item);
+      question.question += "${question.country}?";
+      quiz.questions.add(question);
     }
     setState(() {});
   }
@@ -68,7 +71,6 @@ class _ReviewPageState extends State<ReviewPage> {
                       child: ListTile(
                         leading: Text("${index + 1}"),
                         title: Text(quiz.questions[index].question),
-                        // subtitle: Text(quiz.questions[index].selected),
                         trailing: Text(quiz.questions[index].answer),
                       ),
                     );

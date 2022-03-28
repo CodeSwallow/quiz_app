@@ -1,1 +1,502 @@
-[{"question": "What is the capital of Alabama", "answer": "Montgomery", "options": ["Montgomery", "Providence", "Dover", "Montpelier"]}, {"question": "What is the abbreviation of Alabama", "answer": "AL", "options": ["AL", "RI", "DE", "VT"]}, {"question": "What is the capital of Alaska", "answer": "Juneau", "options": ["Juneau", "Boise", "Little Rock", "Augusta"]}, {"question": "What is the abbreviation of Alaska", "answer": "AK", "options": ["AK", "ID", "AR", "ME"]}, {"question": "What is the capital of Arizona", "answer": "Phoenix", "options": ["Phoenix", "Juneau", "Frankfort", "Indianapolis"]}, {"question": "What is the abbreviation of Arizona", "answer": "AZ", "options": ["AZ", "AK", "KY", "IN"]}, {"question": "What is the capital of Arkansas", "answer": "Little Rock", "options": ["Little Rock", "Trenton", "Olympia", "Topeka"]}, {"question": "What is the abbreviation of Arkansas", "answer": "AR", "options": ["AR", "NJ", "WA", "KS"]}, {"question": "What is the capital of California", "answer": "Sacramento", "options": ["Sacramento", "Madison", "Columbia", "Charleston"]}, {"question": "What is the abbreviation of California", "answer": "CA", "options": ["CA", "WI", "SC", "WV"]}, {"question": "What is the capital of Colorado", "answer": "Denver", "options": ["Denver", "Augusta", "Columbia", "Boston"]}, {"question": "What is the abbreviation of Colorado", "answer": "CO", "options": ["CO", "ME", "SC", "MA"]}, {"question": "What is the capital of Connecticut", "answer": "Hartford", "options": ["Hartford", "Raleigh", "Charleston", "Springfield"]}, {"question": "What is the abbreviation of Connecticut", "answer": "CT", "options": ["CT", "NC", "WV", "IL"]}, {"question": "What is the capital of Delaware", "answer": "Dover", "options": ["Dover", "Concord", "Columbia", "Tallahassee"]}, {"question": "What is the abbreviation of Delaware", "answer": "DE", "options": ["DE", "NH", "SC", "FL"]}, {"question": "What is the capital of Florida", "answer": "Tallahassee", "options": ["Tallahassee", "Trenton", "Jefferson City", "Oklahoma City"]}, {"question": "What is the abbreviation of Florida", "answer": "FL", "options": ["FL", "NJ", "MO", "OK"]}, {"question": "What is the capital of Georgia", "answer": "Atlanta", "options": ["Atlanta", "Saint Paul", "Nashville", "Honolulu"]}, {"question": "What is the abbreviation of Georgia", "answer": "GA", "options": ["GA", "MN", "TN", "HI"]}, {"question": "What is the capital of Hawaii", "answer": "Honolulu", "options": ["Honolulu", "Atlanta", "Sacramento", "Cheyenne"]}, {"question": "What is the abbreviation of Hawaii", "answer": "HI", "options": ["HI", "GA", "CA", "WY"]}, {"question": "What is the capital of Idaho", "answer": "Boise", "options": ["Boise", "Dover", "Phoenix", "Hartford"]}, {"question": "What is the abbreviation of Idaho", "answer": "ID", "options": ["ID", "DE", "AZ", "CT"]}, {"question": "What is the capital of Illinois", "answer": "Springfield", "options": ["Springfield", "Augusta", "Baton Rouge", "Cheyenne"]}, {"question": "What is the abbreviation of Illinois", "answer": "IL", "options": ["IL", "ME", "LA", "WY"]}, {"question": "What is the capital of Indiana", "answer": "Indianapolis", "options": ["Indianapolis", "Dover", "Boston", "Albany"]}, {"question": "What is the abbreviation of Indiana", "answer": "IN", "options": ["IN", "DE", "MA", "NY"]}, {"question": "What is the capital of Iowa", "answer": "Des Moines", "options": ["Des Moines", "Nashville", "Providence", "Jackson"]}, {"question": "What is the abbreviation of Iowa", "answer": "IA", "options": ["IA", "TN", "RI", "MS"]}, {"question": "What is the capital of Kansas", "answer": "Topeka", "options": ["Topeka", "Lansing", "Sacramento", "Raleigh"]}, {"question": "What is the abbreviation of Kansas", "answer": "KS", "options": ["KS", "MI", "CA", "NC"]}, {"question": "What is the capital of Kentucky", "answer": "Frankfort", "options": ["Frankfort", "Olympia", "Lincoln", "Salem"]}, {"question": "What is the abbreviation of Kentucky", "answer": "KY", "options": ["KY", "WA", "NE", "OR"]}, {"question": "What is the capital of Louisiana", "answer": "Baton Rouge", "options": ["Baton Rouge", "Saint Paul", "Olympia", "Saint Paul"]}, {"question": "What is the abbreviation of Louisiana", "answer": "LA", "options": ["LA", "MN", "WA", "MN"]}, {"question": "What is the capital of Maine", "answer": "Augusta", "options": ["Augusta", "Montpelier", "Columbia", "Oklahoma City"]}, {"question": "What is the abbreviation of Maine", "answer": "ME", "options": ["ME", "VT", "SC", "OK"]}, {"question": "What is the capital of Maryland", "answer": "Annapolis", "options": ["Annapolis", "Frankfort", "Boston", "Providence"]}, {"question": "What is the abbreviation of Maryland", "answer": "MD", "options": ["MD", "KY", "MA", "RI"]}, {"question": "What is the capital of Massachusetts", "answer": "Boston", "options": ["Boston", "Jackson", "Harrisburg", "Pierre"]}, {"question": "What is the abbreviation of Massachusetts", "answer": "MA", "options": ["MA", "MS", "PA", "SD"]}, {"question": "What is the capital of Michigan", "answer": "Lansing", "options": ["Lansing", "Saint Paul", "Columbia", "Frankfort"]}, {"question": "What is the abbreviation of Michigan", "answer": "MI", "options": ["MI", "MN", "SC", "KY"]}, {"question": "What is the capital of Minnesota", "answer": "Saint Paul", "options": ["Saint Paul", "Madison", "Sacramento", "Bismarck"]}, {"question": "What is the abbreviation of Minnesota", "answer": "MN", "options": ["MN", "WI", "CA", "ND"]}, {"question": "What is the capital of Mississippi", "answer": "Jackson", "options": ["Jackson", "Montgomery", "Albany", "Albany"]}, {"question": "What is the abbreviation of Mississippi", "answer": "MS", "options": ["MS", "AL", "NY", "NY"]}, {"question": "What is the capital of Missouri", "answer": "Jefferson City", "options": ["Jefferson City", "Olympia", "Hartford", "Harrisburg"]}, {"question": "What is the abbreviation of Missouri", "answer": "MO", "options": ["MO", "WA", "CT", "PA"]}, {"question": "What is the capital of Montana", "answer": "Helena", "options": ["Helena", "Raleigh", "Hartford", "Santa Fe"]}, {"question": "What is the abbreviation of Montana", "answer": "MT", "options": ["MT", "NC", "CT", "NM"]}, {"question": "What is the capital of Nebraska", "answer": "Lincoln", "options": ["Lincoln", "Cheyenne", "Atlanta", "Trenton"]}, {"question": "What is the abbreviation of Nebraska", "answer": "NE", "options": ["NE", "WY", "GA", "NJ"]}, {"question": "What is the capital of Nevada", "answer": "Carson City", "options": ["Carson City", "Jackson", "Jefferson City", "Jackson"]}, {"question": "What is the abbreviation of Nevada", "answer": "NV", "options": ["NV", "MS", "MO", "MS"]}, {"question": "What is the capital of New Hampshire", "answer": "Concord", "options": ["Concord", "Columbia", "Cheyenne", "Madison"]}, {"question": "What is the abbreviation of New Hampshire", "answer": "NH", "options": ["NH", "SC", "WY", "WI"]}, {"question": "What is the capital of New Jersey", "answer": "Trenton", "options": ["Trenton", "Hartford", "Richmond", "Montpelier"]}, {"question": "What is the abbreviation of New Jersey", "answer": "NJ", "options": ["NJ", "CT", "VA", "VT"]}, {"question": "What is the capital of New Mexico", "answer": "Santa Fe", "options": ["Santa Fe", "Madison", "Salt Lake City", "Salem"]}, {"question": "What is the abbreviation of New Mexico", "answer": "NM", "options": ["NM", "WI", "UT", "OR"]}, {"question": "What is the capital of New York", "answer": "Albany", "options": ["Albany", "Concord", "Concord", "Boston"]}, {"question": "What is the abbreviation of New York", "answer": "NY", "options": ["NY", "NH", "NH", "MA"]}, {"question": "What is the capital of North Carolina", "answer": "Raleigh", "options": ["Raleigh", "Lincoln", "Atlanta", "Salt Lake City"]}, {"question": "What is the abbreviation of North Carolina", "answer": "NC", "options": ["NC", "NE", "GA", "UT"]}, {"question": "What is the capital of North Dakota", "answer": "Bismarck", "options": ["Bismarck", "Richmond", "Tallahassee", "Charleston"]}, {"question": "What is the abbreviation of North Dakota", "answer": "ND", "options": ["ND", "VA", "FL", "WV"]}, {"question": "What is the capital of Ohio", "answer": "Columbus", "options": ["Columbus", "Tallahassee", "Helena", "Salt Lake City"]}, {"question": "What is the abbreviation of Ohio", "answer": "OH", "options": ["OH", "FL", "MT", "UT"]}, {"question": "What is the capital of Oklahoma", "answer": "Oklahoma City", "options": ["Oklahoma City", "Austin", "Annapolis", "Albany"]}, {"question": "What is the abbreviation of Oklahoma", "answer": "OK", "options": ["OK", "TX", "MD", "NY"]}, {"question": "What is the capital of Oregon", "answer": "Salem", "options": ["Salem", "Montgomery", "Nashville", "Saint Paul"]}, {"question": "What is the abbreviation of Oregon", "answer": "OR", "options": ["OR", "AL", "TN", "MN"]}, {"question": "What is the capital of Pennsylvania", "answer": "Harrisburg", "options": ["Harrisburg", "Springfield", "Madison", "Madison"]}, {"question": "What is the abbreviation of Pennsylvania", "answer": "PA", "options": ["PA", "IL", "WI", "WI"]}, {"question": "What is the capital of Rhode Island", "answer": "Providence", "options": ["Providence", "Salt Lake City", "Madison", "Indianapolis"]}, {"question": "What is the abbreviation of Rhode Island", "answer": "RI", "options": ["RI", "UT", "WI", "IN"]}, {"question": "What is the capital of South Carolina", "answer": "Columbia", "options": ["Columbia", "Sacramento", "Springfield", "Hartford"]}, {"question": "What is the abbreviation of South Carolina", "answer": "SC", "options": ["SC", "CA", "IL", "CT"]}, {"question": "What is the capital of South Dakota", "answer": "Pierre", "options": ["Pierre", "Atlanta", "Boise", "Montgomery"]}, {"question": "What is the abbreviation of South Dakota", "answer": "SD", "options": ["SD", "GA", "ID", "AL"]}, {"question": "What is the capital of Tennessee", "answer": "Nashville", "options": ["Nashville", "Tallahassee", "Boise", "Cheyenne"]}, {"question": "What is the abbreviation of Tennessee", "answer": "TN", "options": ["TN", "FL", "ID", "WY"]}, {"question": "What is the capital of Texas", "answer": "Austin", "options": ["Austin", "Sacramento", "Providence", "Raleigh"]}, {"question": "What is the abbreviation of Texas", "answer": "TX", "options": ["TX", "CA", "RI", "NC"]}, {"question": "What is the capital of Utah", "answer": "Salt Lake City", "options": ["Salt Lake City", "Bismarck", "Trenton", "Boise"]}, {"question": "What is the abbreviation of Utah", "answer": "UT", "options": ["UT", "ND", "NJ", "ID"]}, {"question": "What is the capital of Vermont", "answer": "Montpelier", "options": ["Montpelier", "Des Moines", "Santa Fe", "Augusta"]}, {"question": "What is the abbreviation of Vermont", "answer": "VT", "options": ["VT", "IA", "NM", "ME"]}, {"question": "What is the capital of Virginia", "answer": "Richmond", "options": ["Richmond", "Annapolis", "Olympia", "Columbus"]}, {"question": "What is the abbreviation of Virginia", "answer": "VA", "options": ["VA", "MD", "WA", "OH"]}, {"question": "What is the capital of Washington", "answer": "Olympia", "options": ["Olympia", "Annapolis", "Honolulu", "Boston"]}, {"question": "What is the abbreviation of Washington", "answer": "WA", "options": ["WA", "MD", "HI", "MA"]}, {"question": "What is the capital of West Virginia", "answer": "Charleston", "options": ["Charleston", "Jefferson City", "Salt Lake City", "Austin"]}, {"question": "What is the abbreviation of West Virginia", "answer": "WV", "options": ["WV", "MO", "UT", "TX"]}, {"question": "What is the capital of Wisconsin", "answer": "Madison", "options": ["Madison", "Juneau", "Des Moines", "Annapolis"]}, {"question": "What is the abbreviation of Wisconsin", "answer": "WI", "options": ["WI", "AK", "IA", "MD"]}, {"question": "What is the capital of Wyoming", "answer": "Cheyenne", "options": ["Cheyenne", "Albany", "Columbia", "Hartford"]}, {"question": "What is the abbreviation of Wyoming", "answer": "WY", "options": ["WY", "NY", "SC", "CT"]}]
+[
+  {
+    "question": "What is the capital of Alabama",
+    "answer": "Montgomery",
+    "options": ["Montgomery", "Providence", "Dover", "Montpelier"]
+  },
+  {
+    "question": "What is the abbreviation of Alabama",
+    "answer": "AL",
+    "options": ["AL", "RI", "DE", "VT"]
+  },
+  {
+    "question": "What is the capital of Alaska",
+    "answer": "Juneau",
+    "options": ["Juneau", "Boise", "Little Rock", "Augusta"]
+  },
+  {
+    "question": "What is the abbreviation of Alaska",
+    "answer": "AK",
+    "options": ["AK", "ID", "AR", "ME"]
+  },
+  {
+    "question": "What is the capital of Arizona",
+    "answer": "Phoenix",
+    "options": ["Phoenix", "Juneau", "Frankfort", "Indianapolis"]
+  },
+  {
+    "question": "What is the abbreviation of Arizona",
+    "answer": "AZ",
+    "options": ["AZ", "AK", "KY", "IN"]
+  },
+  {
+    "question": "What is the capital of Arkansas",
+    "answer": "Little Rock",
+    "options": ["Little Rock", "Trenton", "Olympia", "Topeka"]
+  },
+  {
+    "question": "What is the abbreviation of Arkansas",
+    "answer": "AR",
+    "options": ["AR", "NJ", "WA", "KS"]
+  },
+  {
+    "question": "What is the capital of California",
+    "answer": "Sacramento",
+    "options": ["Sacramento", "Madison", "Columbia", "Charleston"]
+  },
+  {
+    "question": "What is the abbreviation of California",
+    "answer": "CA",
+    "options": ["CA", "WI", "SC", "WV"]
+  },
+  {
+    "question": "What is the capital of Colorado",
+    "answer": "Denver",
+    "options": ["Denver", "Augusta", "Columbia", "Boston"]
+  },
+  {
+    "question": "What is the abbreviation of Colorado",
+    "answer": "CO",
+    "options": ["CO", "ME", "SC", "MA"]
+  },
+  {
+    "question": "What is the capital of Connecticut",
+    "answer": "Hartford",
+    "options": ["Hartford", "Raleigh", "Charleston", "Springfield"]
+  },
+  {
+    "question": "What is the abbreviation of Connecticut",
+    "answer": "CT",
+    "options": ["CT", "NC", "WV", "IL"]
+  },
+  {
+    "question": "What is the capital of Delaware",
+    "answer": "Dover",
+    "options": ["Dover", "Concord", "Columbia", "Tallahassee"]
+  },
+  {
+    "question": "What is the abbreviation of Delaware",
+    "answer": "DE",
+    "options": ["DE", "NH", "SC", "FL"]
+  },
+  {
+    "question": "What is the capital of Florida",
+    "answer": "Tallahassee",
+    "options": ["Tallahassee", "Trenton", "Jefferson City", "Oklahoma City"]
+  },
+  {
+    "question": "What is the abbreviation of Florida",
+    "answer": "FL",
+    "options": ["FL", "NJ", "MO", "OK"]
+  },
+  {
+    "question": "What is the capital of Georgia",
+    "answer": "Atlanta",
+    "options": ["Atlanta", "Saint Paul", "Nashville", "Honolulu"]
+  },
+  {
+    "question": "What is the abbreviation of Georgia",
+    "answer": "GA",
+    "options": ["GA", "MN", "TN", "HI"]
+  },
+  {
+    "question": "What is the capital of Hawaii",
+    "answer": "Honolulu",
+    "options": ["Honolulu", "Atlanta", "Sacramento", "Cheyenne"]
+  },
+  {
+    "question": "What is the abbreviation of Hawaii",
+    "answer": "HI",
+    "options": ["HI", "GA", "CA", "WY"]
+  },
+  {
+    "question": "What is the capital of Idaho",
+    "answer": "Boise",
+    "options": ["Boise", "Dover", "Phoenix", "Hartford"]
+  },
+  {
+    "question": "What is the abbreviation of Idaho",
+    "answer": "ID",
+    "options": ["ID", "DE", "AZ", "CT"]
+  },
+  {
+    "question": "What is the capital of Illinois",
+    "answer": "Springfield",
+    "options": ["Springfield", "Augusta", "Baton Rouge", "Cheyenne"]
+  },
+  {
+    "question": "What is the abbreviation of Illinois",
+    "answer": "IL",
+    "options": ["IL", "ME", "LA", "WY"]
+  },
+  {
+    "question": "What is the capital of Indiana",
+    "answer": "Indianapolis",
+    "options": ["Indianapolis", "Dover", "Boston", "Albany"]
+  },
+  {
+    "question": "What is the abbreviation of Indiana",
+    "answer": "IN",
+    "options": ["IN", "DE", "MA", "NY"]
+  },
+  {
+    "question": "What is the capital of Iowa",
+    "answer": "Des Moines",
+    "options": ["Des Moines", "Nashville", "Providence", "Jackson"]
+  },
+  {
+    "question": "What is the abbreviation of Iowa",
+    "answer": "IA",
+    "options": ["IA", "TN", "RI", "MS"]
+  },
+  {
+    "question": "What is the capital of Kansas",
+    "answer": "Topeka",
+    "options": ["Topeka", "Lansing", "Sacramento", "Raleigh"]
+  },
+  {
+    "question": "What is the abbreviation of Kansas",
+    "answer": "KS",
+    "options": ["KS", "MI", "CA", "NC"]
+  },
+  {
+    "question": "What is the capital of Kentucky",
+    "answer": "Frankfort",
+    "options": ["Frankfort", "Olympia", "Lincoln", "Salem"]
+  },
+  {
+    "question": "What is the abbreviation of Kentucky",
+    "answer": "KY",
+    "options": ["KY", "WA", "NE", "OR"]
+  },
+  {
+    "question": "What is the capital of Louisiana",
+    "answer": "Baton Rouge",
+    "options": ["Baton Rouge", "Saint Paul", "Olympia", "Saint Paul"]
+  },
+  {
+    "question": "What is the abbreviation of Louisiana",
+    "answer": "LA",
+    "options": ["LA", "MN", "WA", "MN"]
+  },
+  {
+    "question": "What is the capital of Maine",
+    "answer": "Augusta",
+    "options": ["Augusta", "Montpelier", "Columbia", "Oklahoma City"]
+  },
+  {
+    "question": "What is the abbreviation of Maine",
+    "answer": "ME",
+    "options": ["ME", "VT", "SC", "OK"]
+  },
+  {
+    "question": "What is the capital of Maryland",
+    "answer": "Annapolis",
+    "options": ["Annapolis", "Frankfort", "Boston", "Providence"]
+  },
+  {
+    "question": "What is the abbreviation of Maryland",
+    "answer": "MD",
+    "options": ["MD", "KY", "MA", "RI"]
+  },
+  {
+    "question": "What is the capital of Massachusetts",
+    "answer": "Boston",
+    "options": ["Boston", "Jackson", "Harrisburg", "Pierre"]
+  },
+  {
+    "question": "What is the abbreviation of Massachusetts",
+    "answer": "MA",
+    "options": ["MA", "MS", "PA", "SD"]
+  },
+  {
+    "question": "What is the capital of Michigan",
+    "answer": "Lansing",
+    "options": ["Lansing", "Saint Paul", "Columbia", "Frankfort"]
+  },
+  {
+    "question": "What is the abbreviation of Michigan",
+    "answer": "MI",
+    "options": ["MI", "MN", "SC", "KY"]
+  },
+  {
+    "question": "What is the capital of Minnesota",
+    "answer": "Saint Paul",
+    "options": ["Saint Paul", "Madison", "Sacramento", "Bismarck"]
+  },
+  {
+    "question": "What is the abbreviation of Minnesota",
+    "answer": "MN",
+    "options": ["MN", "WI", "CA", "ND"]
+  },
+  {
+    "question": "What is the capital of Mississippi",
+    "answer": "Jackson",
+    "options": ["Jackson", "Montgomery", "Albany", "Albany"]
+  },
+  {
+    "question": "What is the abbreviation of Mississippi",
+    "answer": "MS",
+    "options": ["MS", "AL", "NY", "NY"]
+  },
+  {
+    "question": "What is the capital of Missouri",
+    "answer": "Jefferson City",
+    "options": ["Jefferson City", "Olympia", "Hartford", "Harrisburg"]
+  },
+  {
+    "question": "What is the abbreviation of Missouri",
+    "answer": "MO",
+    "options": ["MO", "WA", "CT", "PA"]
+  },
+  {
+    "question": "What is the capital of Montana",
+    "answer": "Helena",
+    "options": ["Helena", "Raleigh", "Hartford", "Santa Fe"]
+  },
+  {
+    "question": "What is the abbreviation of Montana",
+    "answer": "MT",
+    "options": ["MT", "NC", "CT", "NM"]
+  },
+  {
+    "question": "What is the capital of Nebraska",
+    "answer": "Lincoln",
+    "options": ["Lincoln", "Cheyenne", "Atlanta", "Trenton"]
+  },
+  {
+    "question": "What is the abbreviation of Nebraska",
+    "answer": "NE",
+    "options": ["NE", "WY", "GA", "NJ"]
+  },
+  {
+    "question": "What is the capital of Nevada",
+    "answer": "Carson City",
+    "options": ["Carson City", "Jackson", "Jefferson City", "Jackson"]
+  },
+  {
+    "question": "What is the abbreviation of Nevada",
+    "answer": "NV",
+    "options": ["NV", "MS", "MO", "MS"]
+  },
+  {
+    "question": "What is the capital of New Hampshire",
+    "answer": "Concord",
+    "options": ["Concord", "Columbia", "Cheyenne", "Madison"]
+  },
+  {
+    "question": "What is the abbreviation of New Hampshire",
+    "answer": "NH",
+    "options": ["NH", "SC", "WY", "WI"]
+  },
+  {
+    "question": "What is the capital of New Jersey",
+    "answer": "Trenton",
+    "options": ["Trenton", "Hartford", "Richmond", "Montpelier"]
+  },
+  {
+    "question": "What is the abbreviation of New Jersey",
+    "answer": "NJ",
+    "options": ["NJ", "CT", "VA", "VT"]
+  },
+  {
+    "question": "What is the capital of New Mexico",
+    "answer": "Santa Fe",
+    "options": ["Santa Fe", "Madison", "Salt Lake City", "Salem"]
+  },
+  {
+    "question": "What is the abbreviation of New Mexico",
+    "answer": "NM",
+    "options": ["NM", "WI", "UT", "OR"]
+  },
+  {
+    "question": "What is the capital of New York",
+    "answer": "Albany",
+    "options": ["Albany", "Concord", "Concord", "Boston"]
+  },
+  {
+    "question": "What is the abbreviation of New York",
+    "answer": "NY",
+    "options": ["NY", "NH", "NH", "MA"]
+  },
+  {
+    "question": "What is the capital of North Carolina",
+    "answer": "Raleigh",
+    "options": ["Raleigh", "Lincoln", "Atlanta", "Salt Lake City"]
+  },
+  {
+    "question": "What is the abbreviation of North Carolina",
+    "answer": "NC",
+    "options": ["NC", "NE", "GA", "UT"]
+  },
+  {
+    "question": "What is the capital of North Dakota",
+    "answer": "Bismarck",
+    "options": ["Bismarck", "Richmond", "Tallahassee", "Charleston"]
+  },
+  {
+    "question": "What is the abbreviation of North Dakota",
+    "answer": "ND",
+    "options": ["ND", "VA", "FL", "WV"]
+  },
+  {
+    "question": "What is the capital of Ohio",
+    "answer": "Columbus",
+    "options": ["Columbus", "Tallahassee", "Helena", "Salt Lake City"]
+  },
+  {
+    "question": "What is the abbreviation of Ohio",
+    "answer": "OH",
+    "options": ["OH", "FL", "MT", "UT"]
+  },
+  {
+    "question": "What is the capital of Oklahoma",
+    "answer": "Oklahoma City",
+    "options": ["Oklahoma City", "Austin", "Annapolis", "Albany"]
+  },
+  {
+    "question": "What is the abbreviation of Oklahoma",
+    "answer": "OK",
+    "options": ["OK", "TX", "MD", "NY"]
+  },
+  {
+    "question": "What is the capital of Oregon",
+    "answer": "Salem",
+    "options": ["Salem", "Montgomery", "Nashville", "Saint Paul"]
+  },
+  {
+    "question": "What is the abbreviation of Oregon",
+    "answer": "OR",
+    "options": ["OR", "AL", "TN", "MN"]
+  },
+  {
+    "question": "What is the capital of Pennsylvania",
+    "answer": "Harrisburg",
+    "options": ["Harrisburg", "Springfield", "Madison", "Madison"]
+  },
+  {
+    "question": "What is the abbreviation of Pennsylvania",
+    "answer": "PA",
+    "options": ["PA", "IL", "WI", "WI"]
+  },
+  {
+    "question": "What is the capital of Rhode Island",
+    "answer": "Providence",
+    "options": ["Providence", "Salt Lake City", "Madison", "Indianapolis"]
+  },
+  {
+    "question": "What is the abbreviation of Rhode Island",
+    "answer": "RI",
+    "options": ["RI", "UT", "WI", "IN"]
+  },
+  {
+    "question": "What is the capital of South Carolina",
+    "answer": "Columbia",
+    "options": ["Columbia", "Sacramento", "Springfield", "Hartford"]
+  },
+  {
+    "question": "What is the abbreviation of South Carolina",
+    "answer": "SC",
+    "options": ["SC", "CA", "IL", "CT"]
+  },
+  {
+    "question": "What is the capital of South Dakota",
+    "answer": "Pierre",
+    "options": ["Pierre", "Atlanta", "Boise", "Montgomery"]
+  },
+  {
+    "question": "What is the abbreviation of South Dakota",
+    "answer": "SD",
+    "options": ["SD", "GA", "ID", "AL"]
+  },
+  {
+    "question": "What is the capital of Tennessee",
+    "answer": "Nashville",
+    "options": ["Nashville", "Tallahassee", "Boise", "Cheyenne"]
+  },
+  {
+    "question": "What is the abbreviation of Tennessee",
+    "answer": "TN",
+    "options": ["TN", "FL", "ID", "WY"]
+  },
+  {
+    "question": "What is the capital of Texas",
+    "answer": "Austin",
+    "options": ["Austin", "Sacramento", "Providence", "Raleigh"]
+  },
+  {
+    "question": "What is the abbreviation of Texas",
+    "answer": "TX",
+    "options": ["TX", "CA", "RI", "NC"]
+  },
+  {
+    "question": "What is the capital of Utah",
+    "answer": "Salt Lake City",
+    "options": ["Salt Lake City", "Bismarck", "Trenton", "Boise"]
+  },
+  {
+    "question": "What is the abbreviation of Utah",
+    "answer": "UT",
+    "options": ["UT", "ND", "NJ", "ID"]
+  },
+  {
+    "question": "What is the capital of Vermont",
+    "answer": "Montpelier",
+    "options": ["Montpelier", "Des Moines", "Santa Fe", "Augusta"]
+  },
+  {
+    "question": "What is the abbreviation of Vermont",
+    "answer": "VT",
+    "options": ["VT", "IA", "NM", "ME"]
+  },
+  {
+    "question": "What is the capital of Virginia",
+    "answer": "Richmond",
+    "options": ["Richmond", "Annapolis", "Olympia", "Columbus"]
+  },
+  {
+    "question": "What is the abbreviation of Virginia",
+    "answer": "VA",
+    "options": ["VA", "MD", "WA", "OH"]
+  },
+  {
+    "question": "What is the capital of Washington",
+    "answer": "Olympia",
+    "options": ["Olympia", "Annapolis", "Honolulu", "Boston"]
+  },
+  {
+    "question": "What is the abbreviation of Washington",
+    "answer": "WA",
+    "options": ["WA", "MD", "HI", "MA"]
+  },
+  {
+    "question": "What is the capital of West Virginia",
+    "answer": "Charleston",
+    "options": ["Charleston", "Jefferson City", "Salt Lake City", "Austin"]
+  },
+  {
+    "question": "What is the abbreviation of West Virginia",
+    "answer": "WV",
+    "options": ["WV", "MO", "UT", "TX"]
+  },
+  {
+    "question": "What is the capital of Wisconsin",
+    "answer": "Madison",
+    "options": ["Madison", "Juneau", "Des Moines", "Annapolis"]
+  },
+  {
+    "question": "What is the abbreviation of Wisconsin",
+    "answer": "WI",
+    "options": ["WI", "AK", "IA", "MD"]
+  },
+  {
+    "question": "What is the capital of Wyoming",
+    "answer": "Cheyenne",
+    "options": ["Cheyenne", "Albany", "Columbia", "Hartford"]
+  },
+  {
+    "question": "What is the abbreviation of Wyoming",
+    "answer": "WY",
+    "options": ["WY", "NY", "SC", "CT"]
+  }
+]

@@ -10,28 +10,38 @@ import 'package:quiz_app/widgets/quiz_card.dart';
 class QuizPage extends StatefulWidget {
   const QuizPage({Key? key}) : super(key: key);
   static const routeName = '/quiz_page';
-  final int numberQuestions = 5;
 
   @override
   State<QuizPage> createState() => _QuizPageState();
 }
 
 class _QuizPageState extends State<QuizPage> {
-  late int totalQuestions;
+  int totalQuestions = 5;
+  int totalOptions = 4;
   int progressIndex = 0;
   int questionIndex = 0;
-  late Quiz quiz = Quiz(name: 'Us States', questions: []);
+  Quiz quiz = Quiz(name: 'Countries in American Continent', questions: []);
 
   Future<void> readJson() async {
     final String response =
-        await rootBundle.loadString('assets/json/questions.json');
+        await rootBundle.loadString('assets/json/americaCountries.json');
     final List<dynamic> data = await json.decode(response);
-    data.shuffle();
-    for (var item in data.sublist(0, totalQuestions)) {
-      quiz.questions.add(Question.fromJson(item));
-    }
-    for (var question in quiz.questions) {
-      question.options.shuffle();
+    List<int> optionList = List<int>.generate(data.length, (i) => i);
+    List<int> questionsAdded = [];
+    while (true) {
+      optionList.shuffle();
+      int answer = optionList[0];
+      if (questionsAdded.contains(answer)) continue;
+
+      List<String> otherOptions = [];
+      for (var option in optionList.sublist(1, totalOptions)) {
+        otherOptions.add(data[option]['capital']);
+      }
+      Question question = Question.fromJson(data[answer]);
+      question.addOptions(otherOptions);
+      quiz.questions.add(question);
+
+      if (quiz.questions.length >= totalQuestions) break;
     }
     setState(() {});
   }
@@ -39,7 +49,6 @@ class _QuizPageState extends State<QuizPage> {
   @override
   void initState() {
     super.initState();
-    totalQuestions = widget.numberQuestions;
     readJson();
   }
 
@@ -55,7 +64,6 @@ class _QuizPageState extends State<QuizPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Text('Timer', style: Theme.of(context).textTheme.headline1),
           ProgressBar(index: progressIndex, total: totalQuestions),
           ConstrainedBox(
             constraints: const BoxConstraints(maxHeight: 450),
