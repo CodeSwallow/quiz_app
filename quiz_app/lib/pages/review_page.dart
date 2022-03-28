@@ -17,7 +17,7 @@ class _ReviewPageState extends State<ReviewPage> {
 
   Future<void> readJson() async {
     final String response =
-        await rootBundle.loadString('assets/json/americaCountries.json');
+        await rootBundle.loadString('assets/json/countries.json');
     final List<dynamic> data = await json.decode(response);
     for (var item in data) {
       print(item);

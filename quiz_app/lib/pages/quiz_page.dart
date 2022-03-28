@@ -24,7 +24,7 @@ class _QuizPageState extends State<QuizPage> {
 
   Future<void> readJson() async {
     final String response =
-        await rootBundle.loadString('assets/json/americaCountries.json');
+        await rootBundle.loadString('assets/json/countries.json');
     final List<dynamic> data = await json.decode(response);
     List<int> optionList = List<int>.generate(data.length, (i) => i);
     List<int> questionsAdded = [];
